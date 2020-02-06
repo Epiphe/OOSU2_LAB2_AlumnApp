@@ -59,6 +59,7 @@
             this.listBoxCreateOffer = new System.Windows.Forms.ListBox();
             this.label12 = new System.Windows.Forms.Label();
             this.buttonCreateOffer = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.tabControlMainAdmin.SuspendLayout();
             this.tabPageCreateActivity.SuspendLayout();
             this.tabPageCreateOffer.SuspendLayout();
@@ -355,11 +356,21 @@
             this.buttonCreateOffer.Text = "Skapa erbjudande";
             this.buttonCreateOffer.UseVisualStyleBackColor = true;
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(452, 315);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(75, 23);
+            this.btnLogOut.TabIndex = 1;
+            this.btnLogOut.Text = "Logga ut";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
             // MainAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 327);
+            this.ClientSize = new System.Drawing.Size(553, 350);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tabControlMainAdmin);
             this.Name = "MainAdminForm";
             this.Text = "MainAdminForm";
@@ -405,5 +416,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxTitel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
