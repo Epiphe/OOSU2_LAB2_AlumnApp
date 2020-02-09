@@ -436,7 +436,7 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tabControlMainAdmin);
             this.Name = "MainAdminForm";
-            this.Text = "MainAdminForm";
+            this.Text = "Administratör";
             this.tabControlMainAdmin.ResumeLayout(false);
             this.tabPageCreateActivity.ResumeLayout(false);
             this.tabPageCreateActivity.PerformLayout();

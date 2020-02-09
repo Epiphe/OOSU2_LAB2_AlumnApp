@@ -168,7 +168,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Location = new System.Drawing.Point(19, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 0;
@@ -177,7 +177,7 @@
             // listBoxUpcomminActivites
             // 
             this.listBoxUpcomminActivites.FormattingEnabled = true;
-            this.listBoxUpcomminActivites.Location = new System.Drawing.Point(10, 24);
+            this.listBoxUpcomminActivites.Location = new System.Drawing.Point(22, 36);
             this.listBoxUpcomminActivites.Name = "listBoxUpcomminActivites";
             this.listBoxUpcomminActivites.Size = new System.Drawing.Size(251, 290);
             this.listBoxUpcomminActivites.TabIndex = 1;
@@ -185,7 +185,7 @@
             // listBoxUpcommingActivityInfo
             // 
             this.listBoxUpcommingActivityInfo.FormattingEnabled = true;
-            this.listBoxUpcommingActivityInfo.Location = new System.Drawing.Point(297, 24);
+            this.listBoxUpcommingActivityInfo.Location = new System.Drawing.Point(297, 36);
             this.listBoxUpcommingActivityInfo.Name = "listBoxUpcommingActivityInfo";
             this.listBoxUpcommingActivityInfo.Size = new System.Drawing.Size(251, 290);
             this.listBoxUpcommingActivityInfo.TabIndex = 2;
@@ -193,7 +193,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(297, 7);
+            this.label2.Location = new System.Drawing.Point(297, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 13);
             this.label2.TabIndex = 3;
@@ -201,7 +201,7 @@
             // 
             // btnBookActivity
             // 
-            this.btnBookActivity.Location = new System.Drawing.Point(416, 321);
+            this.btnBookActivity.Location = new System.Drawing.Point(416, 333);
             this.btnBookActivity.Name = "btnBookActivity";
             this.btnBookActivity.Size = new System.Drawing.Size(131, 23);
             this.btnBookActivity.TabIndex = 4;
@@ -211,7 +211,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 7);
+            this.label3.Location = new System.Drawing.Point(12, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 13);
             this.label3.TabIndex = 0;
@@ -220,7 +220,7 @@
             // listBoxBookedActivity
             // 
             this.listBoxBookedActivity.FormattingEnabled = true;
-            this.listBoxBookedActivity.Location = new System.Drawing.Point(10, 24);
+            this.listBoxBookedActivity.Location = new System.Drawing.Point(15, 33);
             this.listBoxBookedActivity.Name = "listBoxBookedActivity";
             this.listBoxBookedActivity.Size = new System.Drawing.Size(257, 290);
             this.listBoxBookedActivity.TabIndex = 1;
@@ -228,7 +228,7 @@
             // listBoxBookedActivityInfo
             // 
             this.listBoxBookedActivityInfo.FormattingEnabled = true;
-            this.listBoxBookedActivityInfo.Location = new System.Drawing.Point(283, 24);
+            this.listBoxBookedActivityInfo.Location = new System.Drawing.Point(288, 33);
             this.listBoxBookedActivityInfo.Name = "listBoxBookedActivityInfo";
             this.listBoxBookedActivityInfo.Size = new System.Drawing.Size(266, 290);
             this.listBoxBookedActivityInfo.TabIndex = 2;
@@ -236,7 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(280, 8);
+            this.label4.Location = new System.Drawing.Point(285, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 3;
@@ -244,7 +244,7 @@
             // 
             // btnCancelBookedActivity
             // 
-            this.btnCancelBookedActivity.Location = new System.Drawing.Point(410, 320);
+            this.btnCancelBookedActivity.Location = new System.Drawing.Point(415, 329);
             this.btnCancelBookedActivity.Name = "btnCancelBookedActivity";
             this.btnCancelBookedActivity.Size = new System.Drawing.Size(139, 23);
             this.btnCancelBookedActivity.TabIndex = 4;
@@ -484,7 +484,7 @@
             this.ClientSize = new System.Drawing.Size(608, 426);
             this.Controls.Add(this.tabControlAlumn);
             this.Name = "MainAlumnForm";
-            this.Text = "MainAlumnForm";
+            this.Text = "Alumn";
             this.tabControlAlumn.ResumeLayout(false);
             this.tabPageUpcommingActivities.ResumeLayout(false);
             this.tabPageUpcommingActivities.PerformLayout();
