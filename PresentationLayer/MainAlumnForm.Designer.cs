@@ -62,10 +62,19 @@
             this.listBoxListedAlumnData = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnRemoveAlumnData = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnSaveChanges = new System.Windows.Forms.Button();
+            this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.tabControlAlumn.SuspendLayout();
             this.tabPageUpcommingActivities.SuspendLayout();
             this.tabPageBookedActivities.SuspendLayout();
             this.tabPageAlumnFacts.SuspendLayout();
+            this.tabPageUserData.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlAlumn
@@ -79,6 +88,7 @@
             this.tabControlAlumn.SelectedIndex = 0;
             this.tabControlAlumn.Size = new System.Drawing.Size(579, 394);
             this.tabControlAlumn.TabIndex = 0;
+            this.tabControlAlumn.SelectedIndexChanged += new System.EventHandler(this.tabControlAlumn_SelectedIndexChanged);
             // 
             // tabPageUpcommingActivities
             // 
@@ -140,9 +150,17 @@
             // 
             // tabPageUserData
             // 
+            this.tabPageUserData.Controls.Add(this.btnDeleteAccount);
+            this.tabPageUserData.Controls.Add(this.btnSaveChanges);
+            this.tabPageUserData.Controls.Add(this.textBox3);
+            this.tabPageUserData.Controls.Add(this.label14);
+            this.tabPageUserData.Controls.Add(this.textBox2);
+            this.tabPageUserData.Controls.Add(this.label13);
+            this.tabPageUserData.Controls.Add(this.textBox1);
+            this.tabPageUserData.Controls.Add(this.label12);
             this.tabPageUserData.Location = new System.Drawing.Point(4, 22);
             this.tabPageUserData.Name = "tabPageUserData";
-            this.tabPageUserData.Size = new System.Drawing.Size(744, 400);
+            this.tabPageUserData.Size = new System.Drawing.Size(571, 368);
             this.tabPageUserData.TabIndex = 3;
             this.tabPageUserData.Text = "Användaruppgifter";
             this.tabPageUserData.UseVisualStyleBackColor = true;
@@ -393,6 +411,72 @@
             this.btnRemoveAlumnData.Text = "Ta bort vald information";
             this.btnRemoveAlumnData.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(4, 4);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Ändra förnamn";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(202, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(4, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Ändra efternamn";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(7, 60);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(202, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(4, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(98, 13);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Ändra e-postadress";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(7, 99);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(202, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // btnSaveChanges
+            // 
+            this.btnSaveChanges.Location = new System.Drawing.Point(93, 126);
+            this.btnSaveChanges.Name = "btnSaveChanges";
+            this.btnSaveChanges.Size = new System.Drawing.Size(115, 23);
+            this.btnSaveChanges.TabIndex = 6;
+            this.btnSaveChanges.Text = "Spara ändringar";
+            this.btnSaveChanges.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteAccount
+            // 
+            this.btnDeleteAccount.Location = new System.Drawing.Point(7, 339);
+            this.btnDeleteAccount.Name = "btnDeleteAccount";
+            this.btnDeleteAccount.Size = new System.Drawing.Size(138, 23);
+            this.btnDeleteAccount.TabIndex = 7;
+            this.btnDeleteAccount.Text = "Radera konto";
+            this.btnDeleteAccount.UseVisualStyleBackColor = true;
+            // 
             // MainAlumnForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +492,8 @@
             this.tabPageBookedActivities.PerformLayout();
             this.tabPageAlumnFacts.ResumeLayout(false);
             this.tabPageAlumnFacts.PerformLayout();
+            this.tabPageUserData.ResumeLayout(false);
+            this.tabPageUserData.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -448,5 +534,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBoxExamsAtUniversityOfBorås;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnDeleteAccount;
+        private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label12;
     }
 }
