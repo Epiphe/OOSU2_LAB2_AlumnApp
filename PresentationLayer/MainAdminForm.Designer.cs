@@ -30,9 +30,8 @@
         {
             this.tabControlMainAdmin = new System.Windows.Forms.TabControl();
             this.tabPageCreateActivity = new System.Windows.Forms.TabPage();
-            this.tabPageCreateOffer = new System.Windows.Forms.TabPage();
             this.tabPageEditActivity = new System.Windows.Forms.TabPage();
-            this.tabPageEditOffer = new System.Windows.Forms.TabPage();
+            this.tabPageMakeEmailList = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxActivityTitel = new System.Windows.Forms.TextBox();
@@ -41,41 +40,49 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxContactPerson = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxLocation = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePickerSlut = new System.Windows.Forms.DateTimePicker();
             this.listBoxCreateActivity = new System.Windows.Forms.ListBox();
             this.btnCreateActivity = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxTitel = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbContactPerson = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePickerStartDate = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePickerEndDate = new System.Windows.Forms.DateTimePicker();
-            this.listBoxCreateOffer = new System.Windows.Forms.ListBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.buttonCreateOffer = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxEditTitle = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboboxEditPersonInCharge = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboboxEditContactPerson = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxEditLocation = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePickerEditStart = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dateTimePickerEditStop = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.listBoxEditActivity = new System.Windows.Forms.ListBox();
+            this.btnSaveChanges = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBoxChoosActivity = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabControlMainAdmin.SuspendLayout();
             this.tabPageCreateActivity.SuspendLayout();
-            this.tabPageCreateOffer.SuspendLayout();
+            this.tabPageEditActivity.SuspendLayout();
+            this.tabPageMakeEmailList.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMainAdmin
             // 
             this.tabControlMainAdmin.Controls.Add(this.tabPageCreateActivity);
-            this.tabControlMainAdmin.Controls.Add(this.tabPageCreateOffer);
             this.tabControlMainAdmin.Controls.Add(this.tabPageEditActivity);
-            this.tabControlMainAdmin.Controls.Add(this.tabPageEditOffer);
+            this.tabControlMainAdmin.Controls.Add(this.tabPageMakeEmailList);
             this.tabControlMainAdmin.Location = new System.Drawing.Point(12, 12);
             this.tabControlMainAdmin.Name = "tabControlMainAdmin";
             this.tabControlMainAdmin.SelectedIndex = 0;
-            this.tabControlMainAdmin.Size = new System.Drawing.Size(519, 295);
+            this.tabControlMainAdmin.Size = new System.Drawing.Size(519, 329);
             this.tabControlMainAdmin.TabIndex = 0;
+            this.tabControlMainAdmin.SelectedIndexChanged += new System.EventHandler(this.tabControlMainAdmin_SelectedIndexChanged);
             // 
             // tabPageCreateActivity
             // 
@@ -85,7 +92,7 @@
             this.tabPageCreateActivity.Controls.Add(this.label7);
             this.tabPageCreateActivity.Controls.Add(this.dateTimePickerStart);
             this.tabPageCreateActivity.Controls.Add(this.label6);
-            this.tabPageCreateActivity.Controls.Add(this.textBox1);
+            this.tabPageCreateActivity.Controls.Add(this.textBoxLocation);
             this.tabPageCreateActivity.Controls.Add(this.label5);
             this.tabPageCreateActivity.Controls.Add(this.comboBoxContactPerson);
             this.tabPageCreateActivity.Controls.Add(this.label4);
@@ -97,49 +104,46 @@
             this.tabPageCreateActivity.Location = new System.Drawing.Point(4, 22);
             this.tabPageCreateActivity.Name = "tabPageCreateActivity";
             this.tabPageCreateActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCreateActivity.Size = new System.Drawing.Size(511, 269);
+            this.tabPageCreateActivity.Size = new System.Drawing.Size(511, 303);
             this.tabPageCreateActivity.TabIndex = 0;
             this.tabPageCreateActivity.Text = "Skapa aktivitet";
             this.tabPageCreateActivity.UseVisualStyleBackColor = true;
             // 
-            // tabPageCreateOffer
-            // 
-            this.tabPageCreateOffer.Controls.Add(this.buttonCreateOffer);
-            this.tabPageCreateOffer.Controls.Add(this.label12);
-            this.tabPageCreateOffer.Controls.Add(this.listBoxCreateOffer);
-            this.tabPageCreateOffer.Controls.Add(this.dateTimePickerEndDate);
-            this.tabPageCreateOffer.Controls.Add(this.label11);
-            this.tabPageCreateOffer.Controls.Add(this.dateTimePickerStartDate);
-            this.tabPageCreateOffer.Controls.Add(this.label10);
-            this.tabPageCreateOffer.Controls.Add(this.cbContactPerson);
-            this.tabPageCreateOffer.Controls.Add(this.label9);
-            this.tabPageCreateOffer.Controls.Add(this.textBoxTitel);
-            this.tabPageCreateOffer.Controls.Add(this.label8);
-            this.tabPageCreateOffer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCreateOffer.Name = "tabPageCreateOffer";
-            this.tabPageCreateOffer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCreateOffer.Size = new System.Drawing.Size(511, 269);
-            this.tabPageCreateOffer.TabIndex = 1;
-            this.tabPageCreateOffer.Text = "Skapa erbjudande";
-            this.tabPageCreateOffer.UseVisualStyleBackColor = true;
-            // 
             // tabPageEditActivity
             // 
+            this.tabPageEditActivity.Controls.Add(this.comboBoxChoosActivity);
+            this.tabPageEditActivity.Controls.Add(this.label15);
+            this.tabPageEditActivity.Controls.Add(this.btnSaveChanges);
+            this.tabPageEditActivity.Controls.Add(this.listBoxEditActivity);
+            this.tabPageEditActivity.Controls.Add(this.label14);
+            this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStop);
+            this.tabPageEditActivity.Controls.Add(this.label13);
+            this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStart);
+            this.tabPageEditActivity.Controls.Add(this.label12);
+            this.tabPageEditActivity.Controls.Add(this.textBoxEditLocation);
+            this.tabPageEditActivity.Controls.Add(this.label11);
+            this.tabPageEditActivity.Controls.Add(this.comboboxEditContactPerson);
+            this.tabPageEditActivity.Controls.Add(this.label10);
+            this.tabPageEditActivity.Controls.Add(this.comboboxEditPersonInCharge);
+            this.tabPageEditActivity.Controls.Add(this.label9);
+            this.tabPageEditActivity.Controls.Add(this.textBoxEditTitle);
+            this.tabPageEditActivity.Controls.Add(this.label8);
             this.tabPageEditActivity.Location = new System.Drawing.Point(4, 22);
             this.tabPageEditActivity.Name = "tabPageEditActivity";
-            this.tabPageEditActivity.Size = new System.Drawing.Size(768, 400);
+            this.tabPageEditActivity.Size = new System.Drawing.Size(511, 303);
             this.tabPageEditActivity.TabIndex = 2;
             this.tabPageEditActivity.Text = "Redigera aktivitet";
             this.tabPageEditActivity.UseVisualStyleBackColor = true;
             // 
-            // tabPageEditOffer
+            // tabPageMakeEmailList
             // 
-            this.tabPageEditOffer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEditOffer.Name = "tabPageEditOffer";
-            this.tabPageEditOffer.Size = new System.Drawing.Size(768, 400);
-            this.tabPageEditOffer.TabIndex = 3;
-            this.tabPageEditOffer.Text = "Redigera erbjudande";
-            this.tabPageEditOffer.UseVisualStyleBackColor = true;
+            this.tabPageMakeEmailList.Controls.Add(this.label16);
+            this.tabPageMakeEmailList.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMakeEmailList.Name = "tabPageMakeEmailList";
+            this.tabPageMakeEmailList.Size = new System.Drawing.Size(511, 303);
+            this.tabPageMakeEmailList.TabIndex = 3;
+            this.tabPageMakeEmailList.Text = "Skapa utskickslista";
+            this.tabPageMakeEmailList.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -209,12 +213,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Plats";
             // 
-            // textBox1
+            // textBoxLocation
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 144);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 20);
-            this.textBox1.TabIndex = 8;
+            this.textBoxLocation.Location = new System.Drawing.Point(10, 144);
+            this.textBoxLocation.Name = "textBoxLocation";
+            this.textBoxLocation.Size = new System.Drawing.Size(208, 20);
+            this.textBoxLocation.TabIndex = 8;
             // 
             // label6
             // 
@@ -265,111 +269,170 @@
             this.btnCreateActivity.Text = "Skapa aktivitet";
             this.btnCreateActivity.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Titel:";
-            // 
-            // textBoxTitel
-            // 
-            this.textBoxTitel.Location = new System.Drawing.Point(10, 24);
-            this.textBoxTitel.Name = "textBoxTitel";
-            this.textBoxTitel.Size = new System.Drawing.Size(210, 20);
-            this.textBoxTitel.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 51);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Kontaktperson:";
-            // 
-            // cbContactPerson
-            // 
-            this.cbContactPerson.FormattingEnabled = true;
-            this.cbContactPerson.Location = new System.Drawing.Point(10, 68);
-            this.cbContactPerson.Name = "cbContactPerson";
-            this.cbContactPerson.Size = new System.Drawing.Size(210, 21);
-            this.cbContactPerson.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 101);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 13);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Datum och starttid:";
-            // 
-            // dateTimePickerStartDate
-            // 
-            this.dateTimePickerStartDate.Location = new System.Drawing.Point(11, 118);
-            this.dateTimePickerStartDate.Name = "dateTimePickerStartDate";
-            this.dateTimePickerStartDate.Size = new System.Drawing.Size(209, 20);
-            this.dateTimePickerStartDate.TabIndex = 5;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 150);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Datum och sluttid:";
-            // 
-            // dateTimePickerEndDate
-            // 
-            this.dateTimePickerEndDate.Location = new System.Drawing.Point(11, 166);
-            this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
-            this.dateTimePickerEndDate.Size = new System.Drawing.Size(209, 20);
-            this.dateTimePickerEndDate.TabIndex = 7;
-            // 
-            // listBoxCreateOffer
-            // 
-            this.listBoxCreateOffer.FormattingEnabled = true;
-            this.listBoxCreateOffer.Location = new System.Drawing.Point(241, 24);
-            this.listBoxCreateOffer.Name = "listBoxCreateOffer";
-            this.listBoxCreateOffer.Size = new System.Drawing.Size(245, 199);
-            this.listBoxCreateOffer.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(238, 8);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 13);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "Beskrivning:";
-            // 
-            // buttonCreateOffer
-            // 
-            this.buttonCreateOffer.Location = new System.Drawing.Point(241, 230);
-            this.buttonCreateOffer.Name = "buttonCreateOffer";
-            this.buttonCreateOffer.Size = new System.Drawing.Size(245, 23);
-            this.buttonCreateOffer.TabIndex = 10;
-            this.buttonCreateOffer.Text = "Skapa erbjudande";
-            this.buttonCreateOffer.UseVisualStyleBackColor = true;
-            // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(452, 315);
+            this.btnLogOut.Location = new System.Drawing.Point(456, 347);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(75, 23);
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Logga ut";
             this.btnLogOut.UseVisualStyleBackColor = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(14, 50);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Titel";
+            // 
+            // textBoxEditTitle
+            // 
+            this.textBoxEditTitle.Location = new System.Drawing.Point(17, 66);
+            this.textBoxEditTitle.Name = "textBoxEditTitle";
+            this.textBoxEditTitle.Size = new System.Drawing.Size(212, 20);
+            this.textBoxEditTitle.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(14, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Ansvarig person";
+            // 
+            // comboboxEditPersonInCharge
+            // 
+            this.comboboxEditPersonInCharge.FormattingEnabled = true;
+            this.comboboxEditPersonInCharge.Location = new System.Drawing.Point(17, 106);
+            this.comboboxEditPersonInCharge.Name = "comboboxEditPersonInCharge";
+            this.comboboxEditPersonInCharge.Size = new System.Drawing.Size(212, 21);
+            this.comboboxEditPersonInCharge.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(14, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(76, 13);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Kontaktperson";
+            // 
+            // comboboxEditContactPerson
+            // 
+            this.comboboxEditContactPerson.FormattingEnabled = true;
+            this.comboboxEditContactPerson.Location = new System.Drawing.Point(17, 146);
+            this.comboboxEditContactPerson.Name = "comboboxEditContactPerson";
+            this.comboboxEditContactPerson.Size = new System.Drawing.Size(212, 21);
+            this.comboboxEditContactPerson.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(14, 170);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 13);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Plats";
+            // 
+            // textBoxEditLocation
+            // 
+            this.textBoxEditLocation.Location = new System.Drawing.Point(17, 186);
+            this.textBoxEditLocation.Name = "textBoxEditLocation";
+            this.textBoxEditLocation.Size = new System.Drawing.Size(212, 20);
+            this.textBoxEditLocation.TabIndex = 7;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(14, 209);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 13);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Datum och starttid";
+            // 
+            // dateTimePickerEditStart
+            // 
+            this.dateTimePickerEditStart.Location = new System.Drawing.Point(17, 226);
+            this.dateTimePickerEditStart.Name = "dateTimePickerEditStart";
+            this.dateTimePickerEditStart.Size = new System.Drawing.Size(212, 20);
+            this.dateTimePickerEditStart.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(14, 249);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 13);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Datum och sluttid";
+            // 
+            // dateTimePickerEditStop
+            // 
+            this.dateTimePickerEditStop.Location = new System.Drawing.Point(17, 265);
+            this.dateTimePickerEditStop.Name = "dateTimePickerEditStop";
+            this.dateTimePickerEditStop.Size = new System.Drawing.Size(212, 20);
+            this.dateTimePickerEditStop.TabIndex = 11;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(247, 50);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Beskrivning";
+            // 
+            // listBoxEditActivity
+            // 
+            this.listBoxEditActivity.FormattingEnabled = true;
+            this.listBoxEditActivity.Location = new System.Drawing.Point(250, 66);
+            this.listBoxEditActivity.Name = "listBoxEditActivity";
+            this.listBoxEditActivity.Size = new System.Drawing.Size(242, 186);
+            this.listBoxEditActivity.TabIndex = 13;
+            // 
+            // btnSaveChanges
+            // 
+            this.btnSaveChanges.Location = new System.Drawing.Point(250, 265);
+            this.btnSaveChanges.Name = "btnSaveChanges";
+            this.btnSaveChanges.Size = new System.Drawing.Size(242, 23);
+            this.btnSaveChanges.TabIndex = 14;
+            this.btnSaveChanges.Text = "Spara ändringar";
+            this.btnSaveChanges.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(17, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(123, 13);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "Välj aktivitet att redigera:";
+            // 
+            // comboBoxChoosActivity
+            // 
+            this.comboBoxChoosActivity.FormattingEnabled = true;
+            this.comboBoxChoosActivity.Location = new System.Drawing.Point(17, 25);
+            this.comboBoxChoosActivity.Name = "comboBoxChoosActivity";
+            this.comboBoxChoosActivity.Size = new System.Drawing.Size(475, 21);
+            this.comboBoxChoosActivity.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(4, 4);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "label16";
+            // 
             // MainAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 350);
+            this.ClientSize = new System.Drawing.Size(549, 382);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tabControlMainAdmin);
             this.Name = "MainAdminForm";
@@ -377,8 +440,10 @@
             this.tabControlMainAdmin.ResumeLayout(false);
             this.tabPageCreateActivity.ResumeLayout(false);
             this.tabPageCreateActivity.PerformLayout();
-            this.tabPageCreateOffer.ResumeLayout(false);
-            this.tabPageCreateOffer.PerformLayout();
+            this.tabPageEditActivity.ResumeLayout(false);
+            this.tabPageEditActivity.PerformLayout();
+            this.tabPageMakeEmailList.ResumeLayout(false);
+            this.tabPageMakeEmailList.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -387,16 +452,15 @@
 
         private System.Windows.Forms.TabControl tabControlMainAdmin;
         private System.Windows.Forms.TabPage tabPageCreateActivity;
-        private System.Windows.Forms.TabPage tabPageCreateOffer;
         private System.Windows.Forms.TabPage tabPageEditActivity;
-        private System.Windows.Forms.TabPage tabPageEditOffer;
+        private System.Windows.Forms.TabPage tabPageMakeEmailList;
         private System.Windows.Forms.Button btnCreateActivity;
         private System.Windows.Forms.ListBox listBoxCreateActivity;
         private System.Windows.Forms.DateTimePicker dateTimePickerSlut;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePickerStart;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxLocation;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxContactPerson;
         private System.Windows.Forms.Label label4;
@@ -405,17 +469,24 @@
         private System.Windows.Forms.TextBox textBoxActivityTitel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonCreateOffer;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ListBox listBoxCreateOffer;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEndDate;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePickerStartDate;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cbContactPerson;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxTitel;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEditStop;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEditStart;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxEditLocation;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboboxEditContactPerson;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboboxEditPersonInCharge;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxEditTitle;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxChoosActivity;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.ListBox listBoxEditActivity;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
     }
 }

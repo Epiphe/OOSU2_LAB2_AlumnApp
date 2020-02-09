@@ -16,5 +16,10 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void tabControlMainAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
