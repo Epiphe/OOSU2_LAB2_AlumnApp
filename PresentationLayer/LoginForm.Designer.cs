@@ -96,8 +96,9 @@
             this.labelCreateAccount.Size = new System.Drawing.Size(68, 13);
             this.labelCreateAccount.TabIndex = 6;
             this.labelCreateAccount.Text = "Skapa konto";
+            this.labelCreateAccount.Click += new System.EventHandler(this.labelCreateAccount_Click);
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,7 +111,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.Text = "AlumnAppen";
             this.ResumeLayout(false);
             this.PerformLayout();
