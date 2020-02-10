@@ -91,6 +91,8 @@
             // labelCreateAccount
             // 
             this.labelCreateAccount.AutoSize = true;
+            this.labelCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCreateAccount.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelCreateAccount.Location = new System.Drawing.Point(73, 169);
             this.labelCreateAccount.Name = "labelCreateAccount";
             this.labelCreateAccount.Size = new System.Drawing.Size(68, 13);
