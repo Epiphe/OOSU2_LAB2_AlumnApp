@@ -41,19 +41,23 @@ namespace BusinessEntites
         }
         public class FinishedEducation
         {
+            public int FinEduID { get; set; }
             public string Education { get; set; }
             public DateTime EducationEndDate { get; set; }
         }
         public class OtherEducation
         {
+            public int OtrEduID { get; set; }
             public string EducationsAndCertificates { get; set; }
         }
         public class WorkExperience
         {
+            public int WorkExpID { get; set; }
             public string AlumnWorkExperience { get; set; }
         }
         public class ProgrammingLanguage
         {
+            public int ProgLangID { get; set; }
             public string ProgrammingLang { get; set; }
             public int YearsExperience { get; set; }
         }
@@ -72,6 +76,7 @@ namespace BusinessEntites
 
         public class ListExport
         {
+            public int ListExportID { get; set; }
             public DateTime SentDate { get; set; }
             public List<Alumn> ListedAlumns { get; set; }
         }
