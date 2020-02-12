@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessEntites;
+using BusinessLayer;
 
 namespace PresentationLayer
 {
@@ -18,6 +20,11 @@ namespace PresentationLayer
         }
 
         private void tabControlAlumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBookActivity_Click(object sender, EventArgs e)
         {
 
         }

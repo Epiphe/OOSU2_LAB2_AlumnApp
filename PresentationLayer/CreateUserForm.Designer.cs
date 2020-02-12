@@ -105,6 +105,7 @@
             this.btnCreateAccount.TabIndex = 6;
             this.btnCreateAccount.Text = "Skapa konto";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // label3
             // 

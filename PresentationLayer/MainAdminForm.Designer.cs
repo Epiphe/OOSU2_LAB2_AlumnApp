@@ -64,12 +64,12 @@
             this.textBoxEditTitle = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPageMakeEmailList = new System.Windows.Forms.TabPage();
+            this.comboBoxFilterAlumns = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnCreateAlumnCSV = new System.Windows.Forms.Button();
             this.listBoxAllAlumns = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnCreateAlumnCSV = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBoxFilterAlumns = new System.Windows.Forms.ComboBox();
             this.tabControlMainAdmin.SuspendLayout();
             this.tabPageCreateActivity.SuspendLayout();
             this.tabPageEditActivity.SuspendLayout();
@@ -121,6 +121,7 @@
             this.btnCreateActivity.TabIndex = 14;
             this.btnCreateActivity.Text = "Skapa aktivitet";
             this.btnCreateActivity.UseVisualStyleBackColor = true;
+            this.btnCreateActivity.Click += new System.EventHandler(this.btnCreateActivity_Click);
             // 
             // listBoxCreateActivity
             // 
@@ -418,6 +419,34 @@
             this.tabPageMakeEmailList.Text = "Skapa utskickslista";
             this.tabPageMakeEmailList.UseVisualStyleBackColor = true;
             // 
+            // comboBoxFilterAlumns
+            // 
+            this.comboBoxFilterAlumns.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.comboBoxFilterAlumns.FormattingEnabled = true;
+            this.comboBoxFilterAlumns.Location = new System.Drawing.Point(22, 27);
+            this.comboBoxFilterAlumns.Name = "comboBoxFilterAlumns";
+            this.comboBoxFilterAlumns.Size = new System.Drawing.Size(348, 21);
+            this.comboBoxFilterAlumns.TabIndex = 4;
+            this.comboBoxFilterAlumns.Text = "Välj filter";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(19, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(59, 13);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Filtrera lista";
+            // 
+            // btnCreateAlumnCSV
+            // 
+            this.btnCreateAlumnCSV.Location = new System.Drawing.Point(381, 153);
+            this.btnCreateAlumnCSV.Name = "btnCreateAlumnCSV";
+            this.btnCreateAlumnCSV.Size = new System.Drawing.Size(116, 56);
+            this.btnCreateAlumnCSV.TabIndex = 2;
+            this.btnCreateAlumnCSV.Text = "Skapa .CSV med valda alumner";
+            this.btnCreateAlumnCSV.UseVisualStyleBackColor = true;
+            // 
             // listBoxAllAlumns
             // 
             this.listBoxAllAlumns.FormattingEnabled = true;
@@ -443,34 +472,6 @@
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Logga ut";
             this.btnLogOut.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateAlumnCSV
-            // 
-            this.btnCreateAlumnCSV.Location = new System.Drawing.Point(381, 153);
-            this.btnCreateAlumnCSV.Name = "btnCreateAlumnCSV";
-            this.btnCreateAlumnCSV.Size = new System.Drawing.Size(116, 56);
-            this.btnCreateAlumnCSV.TabIndex = 2;
-            this.btnCreateAlumnCSV.Text = "Skapa .CSV med valda alumner";
-            this.btnCreateAlumnCSV.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(19, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(59, 13);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Filtrera lista";
-            // 
-            // comboBoxFilterAlumns
-            // 
-            this.comboBoxFilterAlumns.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.comboBoxFilterAlumns.FormattingEnabled = true;
-            this.comboBoxFilterAlumns.Location = new System.Drawing.Point(22, 27);
-            this.comboBoxFilterAlumns.Name = "comboBoxFilterAlumns";
-            this.comboBoxFilterAlumns.Size = new System.Drawing.Size(348, 21);
-            this.comboBoxFilterAlumns.TabIndex = 4;
-            this.comboBoxFilterAlumns.Text = "Välj filter";
             // 
             // MainAdminForm
             // 
