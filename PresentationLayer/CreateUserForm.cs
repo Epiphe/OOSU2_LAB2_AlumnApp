@@ -23,5 +23,10 @@ namespace PresentationLayer
         {
 
         }
+
+        private void CreateUserForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
