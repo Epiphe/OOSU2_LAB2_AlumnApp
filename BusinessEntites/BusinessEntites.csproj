@@ -41,8 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Alumn.cs" />
     <Compile Include="BusinessEntites.cs" />
+    <Compile Include="Models\FinishedEducation.cs" />
+    <Compile Include="Models\ListExport.cs" />
+    <Compile Include="Models\OtherEducation.cs" />
+    <Compile Include="Models\ProgrammingLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\WorkExperience.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
