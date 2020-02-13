@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessEntites
 {
@@ -15,6 +16,7 @@ namespace BusinessEntites
         public List<WorkExperience> WorkExperiences { get; set; }
         public List<ProgrammingLanguage> ProgrammingLanguages { get; set; }
 
+        public Alumn() { }
         public Alumn(string username, string password)
         {
             Email = username;

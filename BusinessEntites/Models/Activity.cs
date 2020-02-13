@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessEntites
 {
     public class Activity
     {
+        [Key]
         public int ActivityID { get; set; }
         public string Titel { get; set; }
         public Admin PersonInCharge { get; set; }
