@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessEntites.Contexts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,14 @@ namespace PresentationLayer
         [STAThread]
         static void Main()
         {
+            if (true)
+            {
+                AlumnContext alumnContext = new AlumnContext();
+
+                alumnContext.Database.EnsureDeleted();
+                alumnContext.Database.EnsureCreated();
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
