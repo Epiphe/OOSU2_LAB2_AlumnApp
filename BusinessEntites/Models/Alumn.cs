@@ -9,7 +9,7 @@ namespace BusinessEntites
 {
     public class Alumn : User
     {
-        public string Email { get; set; }
+
         public List<Activity> BookedActivites { get; set; }
         public List<FinishedEducation> FinishedEducations { get; set; }
         public List<OtherEducation> OtherEducations { get; set; }
@@ -17,8 +17,10 @@ namespace BusinessEntites
         public List<ProgrammingLanguage> ProgrammingLanguages { get; set; }
 
         public Alumn() { }
-        public Alumn(string username, string password)
+        public Alumn(string fName, string lName, string username, string password)
         {
+            FirstName = fName;
+            LastName = lName;
             Email = username;
             UserName = username;
             Password = password;

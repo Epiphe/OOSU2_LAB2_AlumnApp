@@ -1,4 +1,5 @@
 ﻿using BusinessEntites.Contexts;
+using BusinessEntites.Models.Seed;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace PresentationLayer
 
                 alumnContext.Database.EnsureDeleted();
                 alumnContext.Database.EnsureCreated();
+
+                AlumnSeed.Populate(alumnContext);
             }
 
             Application.EnableVisualStyles();
