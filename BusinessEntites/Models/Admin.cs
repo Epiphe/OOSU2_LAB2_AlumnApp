@@ -9,6 +9,8 @@ namespace BusinessEntites
 {
     public class Admin : User
     {
+        public List<Activity> activitiesContact;
+        public List<Activity> activitiesInCharge;
 
         public Admin() { }
         public Admin(string username, string password)

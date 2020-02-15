@@ -12,5 +12,6 @@ namespace BusinessEntites
         [Key]
         public int OtrEduID { get; set; }
         public string EducationsAndCertificates { get; set; }
+        public Alumn Alumn;
     }
 }

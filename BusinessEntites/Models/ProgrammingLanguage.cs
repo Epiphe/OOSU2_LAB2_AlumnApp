@@ -13,5 +13,6 @@ namespace BusinessEntites
         public int ProgLangID { get; set; }
         public string ProgrammingLang { get; set; }
         public int YearsExperience { get; set; }
+        public Alumn Alumn;
     }
 }

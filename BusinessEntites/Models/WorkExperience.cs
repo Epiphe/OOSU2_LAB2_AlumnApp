@@ -13,6 +13,7 @@ namespace BusinessEntites
             [Key]
             public int WorkExpID { get; set; }
             public string AlumnWorkExperience { get; set; }
+            public Alumn Alumn;
         }
 
 }

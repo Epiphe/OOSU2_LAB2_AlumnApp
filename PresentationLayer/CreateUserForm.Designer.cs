@@ -120,9 +120,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(243, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 26);
+            this.label3.Size = new System.Drawing.Size(239, 26);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Alumner använder epost som användarnamn.\r\nAdministratörer använder sitt Anstälnni" +
+            this.label3.Text = "Alumner använder epost som användarnamn.\r\nAdministratörer använder sitt Anställni" +
     "ngsnummer.";
             // 
             // label4

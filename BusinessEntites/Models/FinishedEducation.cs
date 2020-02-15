@@ -13,5 +13,6 @@ namespace BusinessEntites
         public int FinEduID { get; set; }
         public string Education { get; set; }
         public DateTime EducationEndDate { get; set; }
+        public Alumn Alumn;
     }
 }
