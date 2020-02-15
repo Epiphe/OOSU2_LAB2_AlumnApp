@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\AlumnContext.cs" />
+    <Compile Include="Contexts\Junction\AlumnActivity.cs" />
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Alumn.cs" />

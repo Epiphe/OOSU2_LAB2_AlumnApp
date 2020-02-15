@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BusinessEntites.Contexts.Junction;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,23 @@ namespace BusinessEntites.Contexts
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<AlumnActivity>().HasKey(t => new {t.ActivityID, t.UserID });
+
+            modelBuilder.Entity<AlumnActivity>()
+                .HasOne(pt => pt.Alumn)
+                .WithMany(p => p.AlumnActivities)
+                .HasForeignKey(pt => pt.UserID);
+
+            modelBuilder.Entity<AlumnActivity>()
+                .HasOne(pt => pt.Activity)
+                .WithMany(p => p.AlumnActivities)
+                .HasForeignKey(pt => pt.ActivityID);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Alumn> Alumns { get; set; }
@@ -25,5 +43,6 @@ namespace BusinessEntites.Contexts
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<WorkExperience> WorkExperiences { get; set; }
+        public DbSet<AlumnActivity> AlumnActivities { get; set; }
     }
 }

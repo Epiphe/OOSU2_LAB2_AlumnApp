@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using BusinessEntites.Contexts.Junction;
 
 namespace BusinessEntites
 {
@@ -18,5 +19,6 @@ namespace BusinessEntites
         public DateTime StartDateAndTime { get; set; }
         public DateTime StopDateAndTime { get; set; }
         public string Description { get; set; }
+        public ICollection<AlumnActivity> AlumnActivities { get; set; }
     }
 }

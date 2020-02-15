@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using BusinessEntites.Contexts.Junction;
 
 namespace BusinessEntites
 {
@@ -15,6 +16,7 @@ namespace BusinessEntites
         public List<OtherEducation> OtherEducations { get; set; }
         public List<WorkExperience> WorkExperiences { get; set; }
         public List<ProgrammingLanguage> ProgrammingLanguages { get; set; }
+        public ICollection<AlumnActivity> AlumnActivities { get; set; }
 
         public Alumn() { }
         public Alumn(string fName, string lName, string username, string password)
