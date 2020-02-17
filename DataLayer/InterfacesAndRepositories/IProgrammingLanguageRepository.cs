@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessEntites;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
-    interface IProgrammingLanguageRepository : IRepository<ProgrammingLanguage>
+    public interface IProgrammingLanguageRepository : IRepository<ProgrammingLanguage>
     {
     }
 }

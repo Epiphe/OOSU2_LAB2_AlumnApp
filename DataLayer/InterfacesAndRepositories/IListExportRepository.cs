@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
-    interface IListExportRepository : IRepository<ListExport>
+    public interface IListExportRepository : IRepository<ListExport>
     {
     }
 }

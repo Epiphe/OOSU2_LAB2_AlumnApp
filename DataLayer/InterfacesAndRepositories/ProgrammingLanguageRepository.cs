@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BusinessEntites;
 using BusinessEntites.Contexts;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
     class ProgrammingLanguageRepository : Repository<ProgrammingLanguage>, IProgrammingLanguageRepository
     {

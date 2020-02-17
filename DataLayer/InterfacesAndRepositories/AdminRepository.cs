@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
     public class AdminRepository : Repository<Admin>, IAdminRepository
     {

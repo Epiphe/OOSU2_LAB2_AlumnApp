@@ -8,9 +8,13 @@ namespace DataLayer
 {
     public interface IUnitOfWork : IDisposable
     {
-        IAlumnRepository AlumnRepository { get; set; }
-        IAdmin
-
-
+        IAlumnRepository AlumnRepositorys { get; set; }
+        IAdminRepository AdminRepositorys { get; set; }
+        IActivityRepository ActivityRepositorys { get; set; }
+        IFinishedEducationRepository FinishedEducationRepositorys { get; set; }
+        IListExportRepository ListExportRepositorys { get; set; }
+        IOtherEducationRepository OtherEducationRepositorys { get; set; }
+        IProgrammingLanguageRepository ProgrammingLanguageRepositorys { get; set; }
+        int Complete();
     }
 }

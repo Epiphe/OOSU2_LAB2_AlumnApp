@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
-    interface IFinishedEducationRepository : IRepository<FinishedEducation>
+    public interface IFinishedEducationRepository : IRepository<FinishedEducation>
     {
     }
 }

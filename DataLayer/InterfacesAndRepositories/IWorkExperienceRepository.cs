@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessEntites;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
-    interface IWorkExperienceRepository : IRepository<WorkExperience>
+    public interface IWorkExperienceRepository : IRepository<WorkExperience>
     {
     }
 }

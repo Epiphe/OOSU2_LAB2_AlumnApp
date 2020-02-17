@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessEntites;
 
-namespace DataLayer.InterfacesAndRepositories
+namespace DataLayer
 {
-    interface IOtherEducationRepository : IRepository<OtherEducation>
+    public interface IOtherEducationRepository : IRepository<OtherEducation>
     {
     }
 }
