@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BusinessEntites.Contexts
 {
-    public class AlumnContext : DbContext
+    public class AlumnProgramContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=OOSU2Lab2TestProject;Trusted_Connection=True; Integrated Security=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=OOSU2Lab2AlumnAppen;Trusted_Connection=True; Integrated Security=True;MultipleActiveResultSets=true");
             base.OnConfiguring(optionsBuilder);
         }
 

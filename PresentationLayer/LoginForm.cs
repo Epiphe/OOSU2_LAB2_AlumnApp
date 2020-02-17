@@ -31,5 +31,19 @@ namespace PresentationLayer
                 Close();
             }
         }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            //string inputUserName = textBoxUserName.Text;
+            //string inputPassword = textBoxPassword.Text;
+            string loginCheck = controlLogin(textBoxUserName.Text, textBoxPassword.Text);
+            if (loginCheck == "alumn")
+            {
+                MainAlumnForm mainAlumnForm = new MainAlumnForm();
+                mainAlumnForm.ShowDialog();
+                this.Close();
+            }
+
+        }
     }
 }

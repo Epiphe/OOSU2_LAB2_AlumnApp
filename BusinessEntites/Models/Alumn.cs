@@ -19,6 +19,7 @@ namespace BusinessEntites
         public ICollection<AlumnActivity> AlumnActivities { get; set; }
 
         public Alumn() { }
+
         public Alumn(string fName, string lName, string username, string password)
         {
             FirstName = fName;

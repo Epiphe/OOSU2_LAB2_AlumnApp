@@ -16,9 +16,10 @@ namespace PresentationLayer
         [STAThread]
         static void Main()
         {
-            if (true)
+            var message = MessageBox.Show("Vill du återställa databasen?", "Meddelande", MessageBoxButtons.YesNo);
+            if (message == DialogResult.Yes)
             {
-                AlumnContext alumnContext = new AlumnContext();
+                AlumnProgramContext alumnContext = new AlumnProgramContext();
 
                 alumnContext.Database.EnsureDeleted();
                 alumnContext.Database.EnsureCreated();

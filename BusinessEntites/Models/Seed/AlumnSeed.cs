@@ -10,7 +10,7 @@ namespace BusinessEntites.Models.Seed
 {
     public class AlumnSeed
     {
-        public static void Populate(AlumnContext alumnContext)
+        public static void Populate(AlumnProgramContext alumnContext)
         {
             Alumn alumn1 = new Alumn()
             {

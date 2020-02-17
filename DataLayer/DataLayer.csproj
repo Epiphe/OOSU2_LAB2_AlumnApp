@@ -141,8 +141,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfacesAndRepositories\ActivityRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\AdminRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\AlumnRepository.cs" />
     <Compile Include="DataLayer.cs" />
+    <Compile Include="InterfacesAndRepositories\FinishedEducationRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IActivityRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IAdminRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IAlumnRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IFinishedEducationRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IListExportRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IOtherEducationRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IProgrammingLanguageRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\IWorkExperienceRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\ListExportRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\OtherEducationRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\ProgrammingLanguageRepository.cs" />
+    <Compile Include="InterfacesAndRepositories\WorkExperienceRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InterfacesAndRepositories\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -154,6 +173,7 @@
       <Name>BusinessEntites</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
