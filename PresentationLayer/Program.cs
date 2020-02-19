@@ -16,6 +16,7 @@ namespace PresentationLayer
         [STAThread]
         static void Main()
         {
+
             var message = MessageBox.Show("Vill du återställa databasen?", "Meddelande", MessageBoxButtons.YesNo);
             if (message == DialogResult.Yes)
             {

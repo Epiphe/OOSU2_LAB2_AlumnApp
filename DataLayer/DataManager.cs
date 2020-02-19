@@ -10,7 +10,7 @@ using BusinessEntites.Contexts;
 
 namespace DataLayer
 {
-    public class DataLayer
+    public class DataManager
     {
         AlumnProgramContext alumnContext = new AlumnProgramContext();
 

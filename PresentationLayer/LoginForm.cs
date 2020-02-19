@@ -14,6 +14,7 @@ namespace PresentationLayer
 {
     public partial class LoginForm : Form
     {
+        public BusinessManager BM = new BusinessManager();
         public LoginForm()
         {
             InitializeComponent();
@@ -36,14 +37,18 @@ namespace PresentationLayer
         {
             //string inputUserName = textBoxUserName.Text;
             //string inputPassword = textBoxPassword.Text;
-            string loginCheck = controlLogin(textBoxUserName.Text, textBoxPassword.Text);
-            if (loginCheck == "alumn")
+            // (textBoxUserName.Text, textBoxPassword.Text)
+
+            if (BM.ControlLogin(textBoxUserName.Text, textBoxPassword.Text))
             {
                 MainAlumnForm mainAlumnForm = new MainAlumnForm();
                 mainAlumnForm.ShowDialog();
                 this.Close();
             }
-
+            else
+            {
+                MessageBox.Show("Du har inte angett rätt användarnamn eller löseord.");
+            }
         }
     }
 }
