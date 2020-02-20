@@ -18,13 +18,18 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
-
+        //Visa epostfältet när du klickar i Admin. och visa när du klickar i alimn.
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
 
         }
 
         private void CreateUserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxUserNameInput_TextChanged(object sender, EventArgs e)
         {
 
         }

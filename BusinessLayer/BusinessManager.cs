@@ -27,7 +27,7 @@ namespace BusinessLayer
                 List<Alumn> AllAlumns = UnitOfWork.AlumnRepositorys.GetAlumnList().ToList();
                 foreach (Alumn A in AllAlumns)
                 {
-                    if (A.UserName.Equals(uName) && A.Password.Equals(uPass))
+                    if (A.UserName.ToLower().Equals(uName) && A.Password.Equals(uPass))
                     {
                          isAlumn = true;
                     }
@@ -38,7 +38,7 @@ namespace BusinessLayer
                 List<Admin> AllAdmin = UnitOfWork.AdminRepositorys.GetAll().ToList();
                 foreach (Admin B in AllAdmin)
                 {
-                    if (B.UserName.Equals(uName) && B.Password.Equals(uPass))
+                    if (B.UserName.ToLower().Equals(uName) && B.Password.Equals(uPass))
                     {
                         isAdmin = true;
                     }
@@ -57,5 +57,9 @@ namespace BusinessLayer
 
         #endregion
 
+        public List<Admin> GetAdmins()
+        {
+          return UnitOfWork.AdminRepositorys.GetAll().ToList();
+        }
     }
 }

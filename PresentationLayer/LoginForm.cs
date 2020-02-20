@@ -33,21 +33,31 @@ namespace PresentationLayer
             }
         }
 
+
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             //string inputUserName = textBoxUserName.Text;
             //string inputPassword = textBoxPassword.Text;
             // (textBoxUserName.Text, textBoxPassword.Text)
 
-            if (BM.ControlLogin(textBoxUserName.Text, textBoxPassword.Text))
+            if (BM.ControlLogin(textBoxUserName.Text.ToLower(), textBoxPassword.Text.ToLower()))
             {
-                MainAlumnForm mainAlumnForm = new MainAlumnForm();
-                mainAlumnForm.ShowDialog();
-                this.Close();
+                if (textBoxUserName.Text.Contains("@"))
+                {
+                    MainAlumnForm mainAlumnForm = new MainAlumnForm();
+                    mainAlumnForm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MainAdminForm mainAdminForm = new MainAdminForm();
+                    mainAdminForm.ShowDialog();
+                    this.Close();
+                }
             }
             else
             {
-                MessageBox.Show("Du har inte angett rätt användarnamn eller löseord.");
+                MessageBox.Show("Du har inte angett rätt användarnamn eller löseord. \nSaknar du ett konto kan du skapa ett nytt genom att klicka på skapa konto länken under logga in.");
             }
         }
     }

@@ -42,8 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +86,7 @@
             this.textBoxUserNameInput.Size = new System.Drawing.Size(210, 20);
             this.textBoxUserNameInput.TabIndex = 3;
             this.textBoxUserNameInput.Text = "Epost eller anst.nr.";
+            this.textBoxUserNameInput.TextChanged += new System.EventHandler(this.textBoxUserNameInput_TextChanged);
             // 
             // label2
             // 
@@ -187,6 +188,14 @@
             this.panel1.Size = new System.Drawing.Size(224, 226);
             this.panel1.TabIndex = 13;
             // 
+            // textBox2
+            // 
+            this.textBox2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox2.Location = new System.Drawing.Point(3, 193);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(210, 20);
+            this.textBox2.TabIndex = 14;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -195,14 +204,6 @@
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Epost:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox2.Location = new System.Drawing.Point(3, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 20);
-            this.textBox2.TabIndex = 14;
             // 
             // CreateUserForm
             // 

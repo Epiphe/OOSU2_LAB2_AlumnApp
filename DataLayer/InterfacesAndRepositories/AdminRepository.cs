@@ -13,5 +13,10 @@ namespace DataLayer
         public AdminRepository(AlumnProgramContext context) : base(context)
         {
         }
+        public string GetFullName(int id)
+        {
+            string fullName = Get(id).FirstName+" "+Get(id).LastName;
+            return fullName;
+        }
     }
 }
