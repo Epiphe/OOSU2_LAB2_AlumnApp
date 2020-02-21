@@ -51,7 +51,6 @@
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.listBoxEditActivity = new System.Windows.Forms.ListBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePickerEditStop = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerEditStart = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
@@ -72,6 +71,9 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.dateTimePickerEndtime = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEditStarttime = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
             this.tabControlMainAdmin.SuspendLayout();
             this.tabPageCreateActivity.SuspendLayout();
             this.tabPageEditActivity.SuspendLayout();
@@ -86,7 +88,7 @@
             this.tabControlMainAdmin.Location = new System.Drawing.Point(12, 12);
             this.tabControlMainAdmin.Name = "tabControlMainAdmin";
             this.tabControlMainAdmin.SelectedIndex = 0;
-            this.tabControlMainAdmin.Size = new System.Drawing.Size(519, 329);
+            this.tabControlMainAdmin.Size = new System.Drawing.Size(519, 371);
             this.tabControlMainAdmin.TabIndex = 0;
             this.tabControlMainAdmin.SelectedIndexChanged += new System.EventHandler(this.tabControlMainAdmin_SelectedIndexChanged);
             // 
@@ -112,7 +114,7 @@
             this.tabPageCreateActivity.Location = new System.Drawing.Point(4, 22);
             this.tabPageCreateActivity.Name = "tabPageCreateActivity";
             this.tabPageCreateActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCreateActivity.Size = new System.Drawing.Size(511, 303);
+            this.tabPageCreateActivity.Size = new System.Drawing.Size(511, 345);
             this.tabPageCreateActivity.TabIndex = 0;
             this.tabPageCreateActivity.Text = "Skapa aktivitet";
             this.tabPageCreateActivity.UseVisualStyleBackColor = true;
@@ -120,7 +122,7 @@
             // dateTimePickerStartTime
             // 
             this.dateTimePickerStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerStartTime.Location = new System.Drawing.Point(10, 226);
+            this.dateTimePickerStartTime.Location = new System.Drawing.Point(10, 250);
             this.dateTimePickerStartTime.Name = "dateTimePickerStartTime";
             this.dateTimePickerStartTime.ShowUpDown = true;
             this.dateTimePickerStartTime.Size = new System.Drawing.Size(208, 20);
@@ -130,7 +132,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 207);
+            this.label7.Location = new System.Drawing.Point(7, 231);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 16;
@@ -138,7 +140,7 @@
             // 
             // richTextBoxCreateActivity
             // 
-            this.richTextBoxCreateActivity.Location = new System.Drawing.Point(250, 29);
+            this.richTextBoxCreateActivity.Location = new System.Drawing.Point(250, 53);
             this.richTextBoxCreateActivity.Name = "richTextBoxCreateActivity";
             this.richTextBoxCreateActivity.Size = new System.Drawing.Size(238, 217);
             this.richTextBoxCreateActivity.TabIndex = 15;
@@ -146,7 +148,7 @@
             // 
             // btnCreateActivity
             // 
-            this.btnCreateActivity.Location = new System.Drawing.Point(250, 262);
+            this.btnCreateActivity.Location = new System.Drawing.Point(250, 286);
             this.btnCreateActivity.Name = "btnCreateActivity";
             this.btnCreateActivity.Size = new System.Drawing.Size(238, 23);
             this.btnCreateActivity.TabIndex = 14;
@@ -156,7 +158,7 @@
             // 
             // dateTimePickerStart
             // 
-            this.dateTimePickerStart.Location = new System.Drawing.Point(10, 184);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(10, 208);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
             this.dateTimePickerStart.Size = new System.Drawing.Size(208, 20);
             this.dateTimePickerStart.TabIndex = 10;
@@ -165,7 +167,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 167);
+            this.label6.Location = new System.Drawing.Point(7, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 9;
@@ -173,7 +175,7 @@
             // 
             // textBoxLocation
             // 
-            this.textBoxLocation.Location = new System.Drawing.Point(10, 144);
+            this.textBoxLocation.Location = new System.Drawing.Point(10, 168);
             this.textBoxLocation.Name = "textBoxLocation";
             this.textBoxLocation.Size = new System.Drawing.Size(208, 20);
             this.textBoxLocation.TabIndex = 8;
@@ -181,7 +183,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 128);
+            this.label5.Location = new System.Drawing.Point(7, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 7;
@@ -190,7 +192,7 @@
             // comboBoxContactPerson
             // 
             this.comboBoxContactPerson.FormattingEnabled = true;
-            this.comboBoxContactPerson.Location = new System.Drawing.Point(10, 104);
+            this.comboBoxContactPerson.Location = new System.Drawing.Point(10, 128);
             this.comboBoxContactPerson.Name = "comboBoxContactPerson";
             this.comboBoxContactPerson.Size = new System.Drawing.Size(208, 21);
             this.comboBoxContactPerson.TabIndex = 6;
@@ -198,7 +200,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 88);
+            this.label4.Location = new System.Drawing.Point(7, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 5;
@@ -207,7 +209,7 @@
             // comboBoxPersonInCharge
             // 
             this.comboBoxPersonInCharge.FormattingEnabled = true;
-            this.comboBoxPersonInCharge.Location = new System.Drawing.Point(10, 64);
+            this.comboBoxPersonInCharge.Location = new System.Drawing.Point(10, 88);
             this.comboBoxPersonInCharge.Name = "comboBoxPersonInCharge";
             this.comboBoxPersonInCharge.Size = new System.Drawing.Size(208, 21);
             this.comboBoxPersonInCharge.TabIndex = 4;
@@ -215,7 +217,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 47);
+            this.label3.Location = new System.Drawing.Point(7, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 3;
@@ -223,7 +225,7 @@
             // 
             // textBoxActivityTitel
             // 
-            this.textBoxActivityTitel.Location = new System.Drawing.Point(10, 24);
+            this.textBoxActivityTitel.Location = new System.Drawing.Point(10, 48);
             this.textBoxActivityTitel.Name = "textBoxActivityTitel";
             this.textBoxActivityTitel.Size = new System.Drawing.Size(208, 20);
             this.textBoxActivityTitel.TabIndex = 2;
@@ -231,7 +233,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 7);
+            this.label2.Location = new System.Drawing.Point(247, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 1;
@@ -240,7 +242,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Location = new System.Drawing.Point(7, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 0;
@@ -248,12 +250,14 @@
             // 
             // tabPageEditActivity
             // 
+            this.tabPageEditActivity.Controls.Add(this.label19);
+            this.tabPageEditActivity.Controls.Add(this.dateTimePicker1);
+            this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStarttime);
             this.tabPageEditActivity.Controls.Add(this.comboBoxChoosActivity);
             this.tabPageEditActivity.Controls.Add(this.label15);
             this.tabPageEditActivity.Controls.Add(this.btnSaveChanges);
             this.tabPageEditActivity.Controls.Add(this.listBoxEditActivity);
             this.tabPageEditActivity.Controls.Add(this.label14);
-            this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStop);
             this.tabPageEditActivity.Controls.Add(this.label13);
             this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStart);
             this.tabPageEditActivity.Controls.Add(this.label12);
@@ -267,7 +271,7 @@
             this.tabPageEditActivity.Controls.Add(this.label8);
             this.tabPageEditActivity.Location = new System.Drawing.Point(4, 22);
             this.tabPageEditActivity.Name = "tabPageEditActivity";
-            this.tabPageEditActivity.Size = new System.Drawing.Size(511, 303);
+            this.tabPageEditActivity.Size = new System.Drawing.Size(511, 345);
             this.tabPageEditActivity.TabIndex = 2;
             this.tabPageEditActivity.Text = "Redigera aktivitet";
             this.tabPageEditActivity.UseVisualStyleBackColor = true;
@@ -291,7 +295,7 @@
             // 
             // btnSaveChanges
             // 
-            this.btnSaveChanges.Location = new System.Drawing.Point(250, 265);
+            this.btnSaveChanges.Location = new System.Drawing.Point(250, 304);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(242, 23);
             this.btnSaveChanges.TabIndex = 14;
@@ -303,7 +307,7 @@
             this.listBoxEditActivity.FormattingEnabled = true;
             this.listBoxEditActivity.Location = new System.Drawing.Point(250, 66);
             this.listBoxEditActivity.Name = "listBoxEditActivity";
-            this.listBoxEditActivity.Size = new System.Drawing.Size(242, 186);
+            this.listBoxEditActivity.Size = new System.Drawing.Size(242, 225);
             this.listBoxEditActivity.TabIndex = 13;
             // 
             // label14
@@ -315,21 +319,14 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Beskrivning";
             // 
-            // dateTimePickerEditStop
-            // 
-            this.dateTimePickerEditStop.Location = new System.Drawing.Point(17, 265);
-            this.dateTimePickerEditStop.Name = "dateTimePickerEditStop";
-            this.dateTimePickerEditStop.Size = new System.Drawing.Size(212, 20);
-            this.dateTimePickerEditStop.TabIndex = 11;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(14, 249);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 13);
+            this.label13.Size = new System.Drawing.Size(69, 13);
             this.label13.TabIndex = 10;
-            this.label13.Text = "Datum och sluttid";
+            this.label13.Text = "Ändra starttid";
             // 
             // dateTimePickerEditStart
             // 
@@ -343,9 +340,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(14, 209);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 13);
+            this.label12.Size = new System.Drawing.Size(67, 13);
             this.label12.TabIndex = 8;
-            this.label12.Text = "Datum och starttid";
+            this.label12.Text = "Ändra datum";
             // 
             // textBoxEditLocation
             // 
@@ -422,7 +419,7 @@
             this.tabPageMakeEmailList.Controls.Add(this.label16);
             this.tabPageMakeEmailList.Location = new System.Drawing.Point(4, 22);
             this.tabPageMakeEmailList.Name = "tabPageMakeEmailList";
-            this.tabPageMakeEmailList.Size = new System.Drawing.Size(511, 303);
+            this.tabPageMakeEmailList.Size = new System.Drawing.Size(511, 345);
             this.tabPageMakeEmailList.TabIndex = 3;
             this.tabPageMakeEmailList.Text = "Skapa utskickslista";
             this.tabPageMakeEmailList.UseVisualStyleBackColor = true;
@@ -474,7 +471,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(456, 347);
+            this.btnLogOut.Location = new System.Drawing.Point(452, 389);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(75, 23);
             this.btnLogOut.TabIndex = 1;
@@ -484,27 +481,58 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(7, 249);
+            this.label18.Location = new System.Drawing.Point(7, 273);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 13);
             this.label18.TabIndex = 18;
             this.label18.Text = "Sluttid";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // dateTimePickerEndtime
             // 
             this.dateTimePickerEndtime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerEndtime.Location = new System.Drawing.Point(10, 265);
+            this.dateTimePickerEndtime.Location = new System.Drawing.Point(10, 289);
             this.dateTimePickerEndtime.Name = "dateTimePickerEndtime";
             this.dateTimePickerEndtime.ShowUpDown = true;
             this.dateTimePickerEndtime.Size = new System.Drawing.Size(208, 20);
-            this.dateTimePickerEndtime.TabIndex = 19;
+            this.dateTimePickerEndtime.TabIndex = 20;
             this.dateTimePickerEndtime.Value = new System.DateTime(2020, 2, 21, 8, 20, 25, 0);
+            this.dateTimePickerEndtime.ValueChanged += new System.EventHandler(this.dateTimePickerEndtime_ValueChanged);
+            // 
+            // dateTimePickerEditStarttime
+            // 
+            this.dateTimePickerEditStarttime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerEditStarttime.Location = new System.Drawing.Point(17, 268);
+            this.dateTimePickerEditStarttime.Name = "dateTimePickerEditStarttime";
+            this.dateTimePickerEditStarttime.ShowUpDown = true;
+            this.dateTimePickerEditStarttime.Size = new System.Drawing.Size(208, 20);
+            this.dateTimePickerEditStarttime.TabIndex = 20;
+            this.dateTimePickerEditStarttime.Value = new System.DateTime(2020, 2, 21, 8, 20, 25, 0);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(17, 307);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(208, 20);
+            this.dateTimePicker1.TabIndex = 21;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 2, 21, 8, 20, 25, 0);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(14, 291);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 13);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "Ändra sluttid";
             // 
             // MainAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 382);
+            this.ClientSize = new System.Drawing.Size(543, 423);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tabControlMainAdmin);
             this.Name = "MainAdminForm";
@@ -539,7 +567,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEditStop;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker dateTimePickerEditStart;
         private System.Windows.Forms.Label label12;
@@ -564,7 +591,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerStartTime;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox richTextBoxCreateActivity;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEndtime;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEndtime;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEditStarttime;
     }
 }

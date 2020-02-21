@@ -39,5 +39,15 @@ namespace PresentationLayer
         {
 
         }
+
+        private void dateTimePickerEndtime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
