@@ -10,10 +10,13 @@ using DataLayer;
 
 
 
+
+
 namespace BusinessLayer
 {
     public class BusinessManager
     {
+        public AlumnProgramContext alumnContext = new AlumnProgramContext();
         public UnitOfWork UnitOfWork = new UnitOfWork(new AlumnProgramContext());
 
         //Loginscript returning true if the user is in the database.
@@ -61,5 +64,33 @@ namespace BusinessLayer
         {
           return UnitOfWork.AdminRepositorys.GetAll().ToList();
         }
+
+        public Admin GetAdmin(int Id)
+        {
+            return UnitOfWork.AdminRepositorys.Get(Id);
+        }
+
+        //Add activityscript
+        #region add activity script
+
+        public void CreateActivity (string title, Admin adminInCharge, Admin adminContact, string place, DateTime startDate, DateTime starttime, DateTime endtime, string description)
+        {
+            UnitOfWork.ActivityRepositorys.Add(
+
+            new Activity()
+            {
+                Titel = title,
+                PersonInCharge = adminInCharge,
+                ContactPerson = adminContact,
+                Place = place,
+                StartDate = startDate,
+                StartTime = starttime,
+                EndTime = endtime,
+                Description = description
+            });
+            UnitOfWork.Complete();
+        }
+
+        #endregion
     }
 }

@@ -37,7 +37,10 @@ namespace PresentationLayer
 
         private void btnCreateActivity_Click(object sender, EventArgs e)
         {
+            Admin chosenInCharge = BM.GetAdmin(comboBoxPersonInCharge.SelectedIndex);
+            Admin chosenContact = BM.GetAdmin(comboBoxContactPerson.SelectedIndex);
 
+            BM.CreateActivity(textBoxActivityTitel.Text,chosenInCharge,chosenContact,textBoxLocation.Text,dateTimePickerStart.Value,dateTimePickerStartTime.Value,dateTimePickerEndtime.Value,richTextBoxActivityDescription.Text);
         }
 
         private void dateTimePickerEndtime_ValueChanged(object sender, EventArgs e)
@@ -48,6 +51,12 @@ namespace PresentationLayer
         private void label18_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSaveChanges_Click(object sender, EventArgs e)
+        {
+
+                
         }
     }
 }

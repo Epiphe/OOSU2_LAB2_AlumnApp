@@ -32,7 +32,7 @@
             this.tabPageCreateActivity = new System.Windows.Forms.TabPage();
             this.dateTimePickerStartTime = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBoxCreateActivity = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxActivityDescription = new System.Windows.Forms.RichTextBox();
             this.btnCreateActivity = new System.Windows.Forms.Button();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +49,6 @@
             this.comboBoxChoosActivity = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnSaveChanges = new System.Windows.Forms.Button();
-            this.listBoxEditActivity = new System.Windows.Forms.ListBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerEditStart = new System.Windows.Forms.DateTimePicker();
@@ -74,6 +73,7 @@
             this.dateTimePickerEditStarttime = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
+            this.richTextBoxEditActivityDescription = new System.Windows.Forms.RichTextBox();
             this.tabControlMainAdmin.SuspendLayout();
             this.tabPageCreateActivity.SuspendLayout();
             this.tabPageEditActivity.SuspendLayout();
@@ -98,7 +98,7 @@
             this.tabPageCreateActivity.Controls.Add(this.label18);
             this.tabPageCreateActivity.Controls.Add(this.dateTimePickerStartTime);
             this.tabPageCreateActivity.Controls.Add(this.label7);
-            this.tabPageCreateActivity.Controls.Add(this.richTextBoxCreateActivity);
+            this.tabPageCreateActivity.Controls.Add(this.richTextBoxActivityDescription);
             this.tabPageCreateActivity.Controls.Add(this.btnCreateActivity);
             this.tabPageCreateActivity.Controls.Add(this.dateTimePickerStart);
             this.tabPageCreateActivity.Controls.Add(this.label6);
@@ -138,13 +138,13 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Starttid";
             // 
-            // richTextBoxCreateActivity
+            // richTextBoxActivityDescription
             // 
-            this.richTextBoxCreateActivity.Location = new System.Drawing.Point(250, 53);
-            this.richTextBoxCreateActivity.Name = "richTextBoxCreateActivity";
-            this.richTextBoxCreateActivity.Size = new System.Drawing.Size(238, 217);
-            this.richTextBoxCreateActivity.TabIndex = 15;
-            this.richTextBoxCreateActivity.Text = "";
+            this.richTextBoxActivityDescription.Location = new System.Drawing.Point(250, 53);
+            this.richTextBoxActivityDescription.Name = "richTextBoxActivityDescription";
+            this.richTextBoxActivityDescription.Size = new System.Drawing.Size(238, 217);
+            this.richTextBoxActivityDescription.TabIndex = 15;
+            this.richTextBoxActivityDescription.Text = "";
             // 
             // btnCreateActivity
             // 
@@ -250,13 +250,13 @@
             // 
             // tabPageEditActivity
             // 
+            this.tabPageEditActivity.Controls.Add(this.richTextBoxEditActivityDescription);
             this.tabPageEditActivity.Controls.Add(this.label19);
             this.tabPageEditActivity.Controls.Add(this.dateTimePicker1);
             this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStarttime);
             this.tabPageEditActivity.Controls.Add(this.comboBoxChoosActivity);
             this.tabPageEditActivity.Controls.Add(this.label15);
             this.tabPageEditActivity.Controls.Add(this.btnSaveChanges);
-            this.tabPageEditActivity.Controls.Add(this.listBoxEditActivity);
             this.tabPageEditActivity.Controls.Add(this.label14);
             this.tabPageEditActivity.Controls.Add(this.label13);
             this.tabPageEditActivity.Controls.Add(this.dateTimePickerEditStart);
@@ -301,14 +301,7 @@
             this.btnSaveChanges.TabIndex = 14;
             this.btnSaveChanges.Text = "Spara ändringar";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
-            // 
-            // listBoxEditActivity
-            // 
-            this.listBoxEditActivity.FormattingEnabled = true;
-            this.listBoxEditActivity.Location = new System.Drawing.Point(250, 66);
-            this.listBoxEditActivity.Name = "listBoxEditActivity";
-            this.listBoxEditActivity.Size = new System.Drawing.Size(242, 225);
-            this.listBoxEditActivity.TabIndex = 13;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // label14
             // 
@@ -528,6 +521,14 @@
             this.label19.TabIndex = 22;
             this.label19.Text = "Ändra sluttid";
             // 
+            // richTextBoxEditActivityDescription
+            // 
+            this.richTextBoxEditActivityDescription.Location = new System.Drawing.Point(250, 66);
+            this.richTextBoxEditActivityDescription.Name = "richTextBoxEditActivityDescription";
+            this.richTextBoxEditActivityDescription.Size = new System.Drawing.Size(242, 222);
+            this.richTextBoxEditActivityDescription.TabIndex = 23;
+            this.richTextBoxEditActivityDescription.Text = "";
+            // 
             // MainAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -581,7 +582,6 @@
         private System.Windows.Forms.ComboBox comboBoxChoosActivity;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnSaveChanges;
-        private System.Windows.Forms.ListBox listBoxEditActivity;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ListBox listBoxAllAlumns;
@@ -590,11 +590,12 @@
         private System.Windows.Forms.Button btnCreateAlumnCSV;
         private System.Windows.Forms.DateTimePicker dateTimePickerStartTime;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBoxCreateActivity;
+        private System.Windows.Forms.RichTextBox richTextBoxActivityDescription;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DateTimePicker dateTimePickerEndtime;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePickerEditStarttime;
+        private System.Windows.Forms.RichTextBox richTextBoxEditActivityDescription;
     }
 }
