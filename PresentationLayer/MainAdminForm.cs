@@ -23,8 +23,8 @@ namespace PresentationLayer
             List<Admin> admins = BM.GetAdmins();
             foreach (Admin ad in admins)
             {
-                comboBoxPersonInCharge.Items.Add(ad.FirstName+" "+ad.LastName);
-                comboBoxContactPerson.Items.Add(ad.FirstName + " " + ad.LastName);
+                comboBoxPersonInCharge.Items.Add(ad.ToString());
+                comboBoxContactPerson.Items.Add(ad.ToString());
             }
 
             

@@ -18,5 +18,9 @@ namespace BusinessEntites
             UserName = username;
             Password = password;
         }
+        public override string ToString()
+        {
+            return FirstName+" "+LastName;
+        }
     }
 }

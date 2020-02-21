@@ -16,8 +16,9 @@ namespace BusinessEntites
         public Admin PersonInCharge { get; set; }
         public Admin ContactPerson { get; set; }
         public string Place { get; set; }
-        public DateTime StartDateAndTime { get; set; }
-        public DateTime StopDateAndTime { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
         public string Description { get; set; }
         public ICollection<AlumnActivity> AlumnActivities { get; set; }
     }
